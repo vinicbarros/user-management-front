@@ -62,7 +62,7 @@ const UserDashboard = () => {
         <div className="flex flex-col overflow-hidden">
           <div className="-m-1.5 overflow-x-auto">
             <div className="p-1.5 w-full inline-block align-middle">
-              <div className="overflow-x-auto overflow-y-hidden h-[322px]">
+              <div className="overflow-x-auto scrollbar overflow-y-hidden h-[322px]">
                 <UserTable
                   users={currentUsers}
                   sort={sort}

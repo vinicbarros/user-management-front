@@ -21,3 +21,20 @@
     @apply bg-background text-primary;
   }
 }
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 1rem;
+    height: 0.4rem;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: hsl(var(--foreground));
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: hsl(var(--tertiary));
+    border-radius: 100vh;
+  }
+}

@@ -33,9 +33,7 @@ export function Pagination({
           key={index + 1}
           type="button"
           className={`min-w-[40px] flex justify-center items-center focus:outline-none py-2.5 text-sm rounded-full  ${
-            currentPage === index + 1
-              ? "bg-primary text-white"
-              : "hover:bg-foreground"
+            currentPage === index + 1 ? "bg-tertiary" : "hover:bg-foreground"
           }`}
           aria-current={currentPage === index + 1 ? "page" : undefined}
           onClick={() => handlePageChange(index + 1)}
